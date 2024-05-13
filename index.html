@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Page</title>
+
+    <style>
+      .form-container {
+        display: grid;
+        min-height: 50vh;
+        place-items: center;
+      }
+
+
+      .form-container {
+  /* border: 1px solid black; */
+  background-color: lightblue;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 100px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <fieldset><legend>Log in Page</legend>
+
+    <div class="form-container">
+      <u><h4>Log in form</h4></u>
+      <form action="">
+        <label for="login">User-Id</label>&emsp;
+        <input
+          type="text"
+          id="login"
+          name="userid"
+          placeholder="Enter your UserID"
+          pattern="[a-z]{6,}"
+          required
+        />
+        <br><br>
+        <label for="pword">Password</label>
+        <input
+          type="password"
+          id="pword"
+          name="passcode"
+          required
+          placeholder="Enter your Password"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        />
+<br><br>
+        <input
+          type="submit"
+          value="login"
+          formaction="../May_1st/VamsiMuraliResume.html"
+          required
+        />
+        <!-- <input type="submit" value="forgot password" formaction="./forgot_passcode.html"> -->
+        <!-- <br><br>
+<input type="submit" value="create a new account" formaction="./Sign_in.html"> -->
+      </form>
+
+      <form>
+        <input
+          type="submit"
+          value="forgot password"
+          formaction="./forgot_passcode.html"
+        />
+        <input
+          type="submit"
+          value="create a new account"
+          formaction="./Sign_in.html"
+        />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
