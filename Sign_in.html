@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .form-container {
+        display: grid;
+        min-height: 50vh;
+        place-items: center;
+      }
+
+      form {
+        width: 35%;
+      }
+
+      .form-container {
+  /* border: 1px solid black; */
+  background-color: lightblue;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 100px;
+      }
+
+    </style>
+
+
+  </head>
+  <body>
+    <fieldset><legend>Sign in Page</legend>
+    <div class="form-container">
+
+    <u><h4>Sign in form</h4></u>
+    <form action="./index.html">
+      <label for="name">Name</label>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+      <input type="text" id="name" placeholder="Name" name="name" required/>
+      <br /><br />
+      <label for="phone">PhoneNo</label>&emsp;&emsp;&emsp;&emsp;
+      <input type="num" id="phone" placeholder="PhoneNo" name="phone" required/>
+      <br /><br />
+      <label for="sign">Email-ID</label>&emsp;&emsp;&emsp;&emsp;
+      <input
+        type="email"
+        id="sign"
+        name="email"
+        placeholder="Email"
+        required
+        
+      />
+      <br /><br />
+      <label for="passcode">Password</label>&emsp;&emsp;&emsp;&emsp;
+      <input
+        type="password"
+        name="password"
+        placeholder="Password"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+      />
+      <br /><br />
+
+      <label for="conform">Confirm Password</label>&nbsp;
+      <input type="password" id="conform" placeholder="Confirm Password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>
+      <br /><br />
+
+      <input type="submit" value="sign in" />
+      <br><br>
+      <!-- <input type="submit" value="already have an account" formaction="./May_8th_Task.html"> -->
+    </form>
+<form><input type="submit" value="already have an account" formaction="./index.html"></form>
+  </fieldset>
+</div>
+
+  </body>
+</html>
